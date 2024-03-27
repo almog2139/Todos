@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Apps!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="onInit()">
+    <div class="container">
+        <div class="todo-app">
+            <h2 class="title">Todo List <img src="images/icon.png" /></h2>
+            <form class="add-todos" onsubmit="onAddTodo(event)">
+                <input id="todo-text" type="text" placeholder="Add A New Todo" />
+                <input id="todo-date" type="date" />
+                <select id="todo-status">
+                    <option value="">Todo Status</option>
+                    <option value="done">Done</option>
+                    <option value="new">New</option>
+                    <option value="completed">Completed</option>
+                    <option value="canceled">Canceled</option>
+                
+                </select>
+                <button class="adding-btn"></button>
+            </form>
+            <ul class="todo-list"></ul>
+        </div>
+    </div>
+    <script src="js/storage.js"></script>
+    <script src="js/todos.js"></script>
+</body>
+
+</html>
